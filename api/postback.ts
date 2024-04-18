@@ -7,6 +7,7 @@ export default async function handle(req: VercelRequest, res: VercelResponse) {
         const user = await createUser(String(source), String(sub1));
         if (user) {
             res.statusCode = 200;
+            res.send(`Ok`);
         } else {
             res.statusCode = 400;
             res.end('<h1>Server Error</h1><p>Sorry, there was a problem</p>');
