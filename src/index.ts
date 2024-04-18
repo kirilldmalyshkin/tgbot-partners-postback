@@ -29,6 +29,6 @@ export const startVercel = async (req: VercelRequest, res: VercelResponse) => {
 
 ENVIRONMENT !== 'production' && development(bot);
 
-bot.catch((err, ctx) => {
-  console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
-});
+// bot.catch((err, ctx) => {
+//   console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
+// });
