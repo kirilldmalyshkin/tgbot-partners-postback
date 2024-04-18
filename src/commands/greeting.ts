@@ -1,5 +1,8 @@
 import { Context, Markup } from 'telegraf';
 import createDebug from 'debug';
+// import globalContent from '../data/content.json';
+
+// const content = globalContent.greeting;
 
 const debug = createDebug('bot:greeting_text');
 
@@ -8,6 +11,7 @@ export const greeting = () => async (ctx: Context) => {
 
   const userName = ctx.from?.first_name + ' ' + (ctx.from?.last_name || '');
   const userId = `${ctx.from?.id}`;
+  // const welcomeMessage = content.text;
   const welcomeMessage = `Привет ${userName} \n\nДобро пожаловать в 💀 *ALEXEY BOT* 💀\n\nтвой ID — *${userId}*`;
 
   const inlineKeyboard = Markup.inlineKeyboard([
