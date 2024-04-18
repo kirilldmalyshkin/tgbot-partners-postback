@@ -16,7 +16,7 @@ export const registration = () => async (ctx: Context) => {
     [
       Markup.button.url(
         '🔗Регистрация',
-        `https://vs66cd75semb.com/VNos$sub1=${userId}`,
+        `https://vs66cd75semb.com/VNos?&sub1=${userId}`,
       ),
     ],
     [Markup.button.callback('🏠Главное меню', 'start')],
