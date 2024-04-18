@@ -4,7 +4,7 @@ import prismaExample from "../src/domain/prismaExample";
 export default async function handle(req: VercelRequest, res: VercelResponse) {
     try {
         const { name = 'World' } = req.query;
-        const a = await prismaExample(name);
+        const a = await prismaExample(String(name));
         res.send(`Hello ${a}!`);
     } catch (e: any) {
         res.statusCode = 500;
