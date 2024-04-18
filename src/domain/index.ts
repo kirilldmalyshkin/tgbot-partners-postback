@@ -1,1 +1,1 @@
-export * from './prismaExample';
+export * from './user';

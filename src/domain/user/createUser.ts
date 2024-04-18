@@ -1,13 +1,12 @@
-
 import {PrismaClient} from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-export default async function prismaExample(name: string): Promise<any>{
+export async function createUser(externalId: string, tgId: string): Promise<any>{
     await prisma.user.create({
         data: {
-            name,
-            tgId: 'xxxx@example-user.com',
+            externalId,
+            tgId,
         },
     });
     return prisma.user.findFirst();
