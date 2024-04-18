@@ -1,6 +1,6 @@
 import { Telegraf } from 'telegraf';
 import createDebug from 'debug';
-import {MyContext} from "../types";
+import { MyContext } from '../types';
 
 const debug = createDebug('bot:dev');
 

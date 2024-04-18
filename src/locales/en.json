@@ -1,0 +1,33 @@
+{
+  "greeting": {
+    "text": "Welcome to the AVIATRIX Signal bot \n\nOur bot is based on a neural network from OpenAI \nIt can predict aircraft crash rates with 85% confidence \n\nTo start using the bot, click “Register”",
+    "imageUrl": "https://avatars.mds.yandex.net/get-mpic/12390131/2a0000018e3d75be2247d25fa833bb461ab9/600x800"
+  },
+  "registration": {
+    "text": "▶️After successful registration, you will receive a notification from the bot about successful registration\n\nAfter which you can use the signals\\!▶️",
+    "imageUrl": "https://qph.cf2.quoracdn.net/main-qimg-5173ad60704a342b3516fb3a6f4cf6b8",
+    "url": "https://vs66cd75semb.com/VNos?sub1=${userId}"
+  },
+  "instructions": {
+    "text": "Hello! This is information about the bot 💀 *ALEXEY BOT* 💀",
+    "imageUrl": ""
+  },
+  "markup": {
+    "main" : {
+      "text": "🏠Main menu",
+      "description": "Main menu"
+    },
+    "registration" : {
+      "text": "📝Registration",
+      "description": "Registration"
+    },
+    "registration_link" : {
+      "text": "🔗Registration",
+      "description": "Registration"
+    },
+    "instructions" : {
+      "text": "📚Instruction",
+      "description": "Instructions on how to use"
+    }
+  }
+}

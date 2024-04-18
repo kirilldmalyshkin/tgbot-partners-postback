@@ -401,6 +401,13 @@ arg@^4.1.0:
   resolved "https://registry.npmjs.org/arg/-/arg-4.1.3.tgz"
   integrity sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==
 
+argparse@^1.0.7:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  dependencies:
+    sprintf-js "~1.0.2"
+
 async-listen@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/async-listen/-/async-listen-3.0.0.tgz"
@@ -508,6 +515,11 @@ color-support@^1.1.2:
   resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
   integrity sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg==
 
+compile-template@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/compile-template/-/compile-template-0.3.1.tgz#e581a08385c792609408d448187a5eaaf334b6b0"
+  integrity sha512-5aB55cRApvy8zKPe9RrrLVysVpHafgp1IMvfGYQ8QnXrIsafYuj73yyIGYEHsslYoDxIs/XsM5wTIxICcwIKog==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
@@ -542,12 +554,19 @@ crypto-js@^4.2.0:
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
   integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
-debug@4, debug@^4, debug@^4.3.4:
+debug@4, debug@^4, debug@^4.0.1, debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
+
+debug@^3.1.0:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
+  integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
+  dependencies:
+    ms "^2.1.1"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -735,6 +754,11 @@ esbuild@0.14.47:
     esbuild-windows-64 "0.14.47"
     esbuild-windows-arm64 "0.14.47"
 
+esprima@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
+  integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
+
 estree-walker@2.0.2, estree-walker@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
@@ -911,6 +935,14 @@ isexe@^2.0.0:
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
+js-yaml@^3.6.1:
+  version "3.14.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
+  integrity sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
 json-schema-to-ts@1.6.4:
   version "1.6.4"
   resolved "https://registry.npmjs.org/json-schema-to-ts/-/json-schema-to-ts-1.6.4.tgz"
@@ -1002,6 +1034,11 @@ ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+
+ms@^2.1.1:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
+  integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
 node-fetch@2.6.9:
   version "2.6.9"
@@ -1311,6 +1348,11 @@ simple-update-notifier@^2.0.0:
   dependencies:
     semver "^7.5.3"
 
+sprintf-js@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+  integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
+
 "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
@@ -1352,6 +1394,22 @@ tar@^6.1.11:
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
+
+telegraf-i18n@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.6.0.tgz#d75a5247bd4b6678f051b370871fca9488c61952"
+  integrity sha512-xe8ztg9lh5IoN0xjlHpuNkF/b2+HGMYEDwURFYaKbUIavNSXpB5B48WeOJ6MySEAIRNegc+S9lLzJcb4JBPX0g==
+  dependencies:
+    compile-template "^0.3.1"
+    debug "^4.0.1"
+    js-yaml "^3.6.1"
+
+telegraf-ratelimit@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/telegraf-ratelimit/-/telegraf-ratelimit-2.0.0.tgz#64c72d77913901f92c690cd9078b1f724ef4268a"
+  integrity sha512-OUVJRz+pVDpkOfwvFuv4x5YxcPIl6puPN3HRdicN3NDnT+jQeMzKDwVAkvloUtyH1Ruo1wH4nfB5tZbtJAJ4pQ==
+  dependencies:
+    debug "^3.1.0"
 
 telegraf@^4.16.3:
   version "4.16.3"
