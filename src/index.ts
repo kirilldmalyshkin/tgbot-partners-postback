@@ -24,14 +24,10 @@ bot.telegram.setMyCommands([
 ]);
 
 export const startVercel = async (req: VercelRequest, res: VercelResponse) => {
-  await bot.handleUpdate(req.body);
-  res.status(200).end();
+  await production(req, res, bot);
 };
 
-if (ENVIRONMENT !== 'production') {
-  bot.launch();
-  console.log('Bot is running in development mode');
-}
+ENVIRONMENT !== 'production' && development(bot);
 
 bot.catch((err, ctx) => {
   console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
