@@ -4,7 +4,7 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 import { development, production } from './core';
 import { greeting, instructions, registration } from './commands';
 
-const BOT_TOKEN = process.env.BOT_TOKEN || '';
+const BOT_TOKEN = process.env.BOT_TOKEN || '7187097485:AAFyQ1LO6qH2M2ulHYVgtoUEN37bXKWw6_M';
 const ENVIRONMENT = process.env.NODE_ENV || '';
 
 const bot = new Telegraf(BOT_TOKEN);
