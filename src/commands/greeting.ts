@@ -1,4 +1,4 @@
-import { Context, Markup } from 'telegraf';
+import { Markup } from 'telegraf';
 import createDebug from 'debug';
 import { loadLanguage } from "../domain";
 import {ContentStructure} from "../data/interface";
