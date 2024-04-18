@@ -4,7 +4,7 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 import { development, production } from './core';
 import { greeting, instructions, registration } from './commands';
 
-const BOT_TOKEN = process.env.BOT_TOKEN || '7187097485:AAFyQ1LO6qH2M2ulHYVgtoUEN37bXKWw6_M';
+const BOT_TOKEN = process.env.BOT_TOKEN || '';
 const ENVIRONMENT = process.env.NODE_ENV || '';
 
 const bot = new Telegraf(BOT_TOKEN);
@@ -23,12 +23,9 @@ bot.telegram.setMyCommands([
   { command: 'registration', description: 'Регистрация' },
 ]);
 
+//prod mode (Vercel)
 export const startVercel = async (req: VercelRequest, res: VercelResponse) => {
   await production(req, res, bot);
 };
-
+//dev mode
 ENVIRONMENT !== 'production' && development(bot);
-
-// bot.catch((err, ctx) => {
-//   console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
-// });
